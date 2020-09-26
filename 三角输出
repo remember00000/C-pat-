@@ -1,0 +1,22 @@
+//输出一个倒三角形
+#include<stdio.h>
+int main()
+{
+    int i;
+    for(i=0;i<4;i++)//问题1，第几行
+    {
+    	int m=0; 
+        for(m=0;m<i;m++)//每行前面的空格数与行数的联系
+        {
+            printf(" ");
+        }
+        int n=0;
+        while(n<4-i)//输出的* 的数目与行标的联系输出
+        {
+            printf("* ");
+            n++;
+        }
+        printf("\n");
+    }
+    return 0;
+}
